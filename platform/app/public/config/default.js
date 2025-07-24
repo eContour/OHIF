@@ -3,11 +3,17 @@
 window.config = {
   name: 'config/default.js',
   routerBasename: '/ohif',
-  // whiteLabeling: {},
+    whiteLabeling: {
+    createLogoComponentFn: function (React) {
+      return React.createElement('div');
+    },
+  },
   extensions: [],
   modes: [],
   customizationService: {},
   showStudyList: true,
+  showPatientInfo: disabled,
+  // investigationalUseDialog: never,
   // some windows systems have issues with more than 3 web workers
   maxNumberOfWebWorkers: 3,
   // below flag is for performance reasons, but it might not work for all servers
