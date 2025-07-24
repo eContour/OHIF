@@ -12,7 +12,7 @@ window.config = {
   modes: [],
   customizationService: {},
   showStudyList: true,
-  showPatientInfo: disabled,
+  // showPatientInfo: disabled,
   // investigationalUseDialog: never,
   // some windows systems have issues with more than 3 web workers
   maxNumberOfWebWorkers: 3,
